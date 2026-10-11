@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DON AZA-KHEM | V1 - Navy Signature</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;background:#FFFEF8;color:#0A0A0A}
+header{padding:24px;text-align:center;border-bottom:1px solid #f0e9d0}
+.logo{font-family:'Cormorant Garamond';letter-spacing:6px;font-size:20px;font-weight:600}
+.hero{max-width:480px;margin:0 auto;padding:20px 16px 120px}
+.hero img{width:100%;border-radius:24px;aspect-ratio:3/4;object-fit:cover;background:#faf6eb}
+.info{padding:20px 4px}
+.title{font-family:'Cormorant Garamond';font-size:28px}
+.price{font-size:20px;margin-top:8px;font-weight:600}
+.desc{font-size:13px;opacity:.6;margin-top:12px;line-height:1.6;letter-spacing:.3px}
+.sizes{display:flex;gap:10px;margin:18px 0}
+.size{width:48px;height:48px;border:1px solid #ddd;border-radius:100px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.size.active{background:#0A0A0A;color:white}
+.btn{width:100%;padding:18px;border-radius:100px;border:none;background:#0A0A0A;color:white;letter-spacing:2px;font-size:13px;margin-top:16px}
+.btn-gold{background:#C9A86A}
+.wa{position:fixed;bottom:16px;left:16px;right:16px;background:#25D366;color:white;text-align:center;padding:18px;border-radius:100px;font-weight:700;text-decoration:none}
+</style>
+</head>
+<body>
+<header><div class="logo">DON AZA-KHEM</div><div style="font-size:10px;opacity:.5;letter-spacing:2px;margin-top:6px">CAPE TOWN • 073 628 5307</div></header>
+<div class="hero">
+<img src="navy_shirt_real.jpg" alt="Navy Signature Shirt">
+<div class="info">
+<div class="title">Navy Signature Shirt</div>
+<div class="price">R599 • Satin • Gold Cross Detail</div>
+<div class="desc">Signature satin finish. Folded presentation. Paired with 18k gold cross chain. Tailored fit. Quiet luxury for weddings, dinners, and boardrooms.</div>
+<div style="font-size:11px;letter-spacing:2px;opacity:.5;margin-top:20px">SELECT SIZE</div>
+<div class="sizes" id="sizes"></div>
+<button class="btn" onclick="buy()">BUY NOW — WhatsApp 073 628 5307</button>
+<button class="btn btn-gold" onclick="buyFull()">FULL SUIT R3298 — Blazer + Shirt + Pants</button>
+<div style="text-align:center;font-size:11px;opacity:.4;margin-top:16px">Cash on Delivery in Cape Town • 24hr delivery</div>
+</div>
+</div>
+<a class="wa" href="https://wa.me/27736285307" target="_blank">💬 ORDER ON WHATSAPP</a>
+<script>
+let sz="L";
+const sizesEl=document.getElementById("sizes");
+["S","M","L","XL","XXL"].forEach(s=>{
+let d=document.createElement("div");
+d.className="size"+(s===sz?" active":"");
+d.textContent=s;
+d.onclick=()=>{
+document.querySelectorAll(".size").forEach(x=>x.classList.remove("active"));
+d.classList.add("active");
+sz=s;
+};
+sizesEl.appendChild(d);
+});
+function buy(){
+let m=`Hi DON AZA-KHEM — I want Navy Signature Shirt Size ${sz} — R599. My address: `;
+window.open(`https://wa.me/27736285307?text=${encodeURIComponent(m)}`,"_blank");
+}
+function buyFull(){
+let m=`Hi DON AZA-KHEM — I want FULL SUIT R3298 — Navy Blazer + Navy Shirt + Pants Size ${sz}. My address: `;
+window.open(`https://wa.me/27736285307?text=${encodeURIComponent(m)}`,"_blank");
+}
+</script>
+</body>
+</html>
