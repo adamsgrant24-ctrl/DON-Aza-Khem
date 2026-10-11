@@ -10,6 +10,7 @@ import { Footer } from './components/Footer';
 import { ProductModal } from './components/ProductModal';
 import { CartDrawer } from './components/CartDrawer';
 import { ProductCard } from './components/ProductCard';
+import { NavySignatureSpotlight } from './components/NavySignatureSpotlight';
 
 import { ActivePage, CartItem, Product } from './types';
 import { SUITS_DATA, SHIRTS_DATA, JEWELRY_DATA, ALL_PRODUCTS } from './data/products';
@@ -119,6 +120,12 @@ export default function App() {
             <Hero
               onSelectProduct={(p) => setSelectedProduct(p)}
               setActivePage={setActivePage}
+            />
+
+            {/* Featured V1 Drop: Navy Signature Shirt & Full Suit Bundle */}
+            <NavySignatureSpotlight
+              onAddToCart={handleAddToCart}
+              onQuickView={(p) => setSelectedProduct(p)}
             />
 
             {/* 2. Spotlight on Suits (5 Looks @ R2,999) */}
@@ -301,6 +308,45 @@ export default function App() {
           </div>
         )}
 
+        {/* VIEW: NAVY SIGNATURE (V1 DROP) */}
+        {activePage === 'navy-signature' && (
+          <div>
+            <NavySignatureSpotlight
+              onAddToCart={handleAddToCart}
+              onQuickView={(p) => setSelectedProduct(p)}
+              isStandalone={true}
+            />
+            
+            {/* Matching Tailoring Collection Section */}
+            <section className="py-16 sm:py-20 bg-white border-t border-[#F0E9D0]">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-12">
+                  <span className="text-xs uppercase tracking-[0.25em] text-[#C9A961] font-semibold block mb-2">
+                    Complete The Old Money Look
+                  </span>
+                  <h3 className="font-cormorant text-3xl sm:text-4xl text-[#000000] font-semibold uppercase">
+                    Tailored Suits Paired With Navy Satin
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#666666] font-light mt-1 max-w-xl mx-auto">
+                    Hand-finished peak lapels, half-canvas Italian super 140s wool blend tailoring designed for private dining, galas, and boardrooms.
+                  </p>
+                </div>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {SUITS_DATA.filter((s) => s.id === 'suit-navy-signature-bundle' || s.id === 'suit-champagne-navy' || s.id === 'suit-navy-burgundy').map((suit) => (
+                    <ProductCard
+                      key={suit.id}
+                      product={suit}
+                      onQuickView={(p) => setSelectedProduct(p)}
+                      onAddToCart={(p, sz) => handleAddToCart(p, sz)}
+                    />
+                  ))}
+                </div>
+              </div>
+            </section>
+          </div>
+        )}
+
         {/* VIEW: CONTACT */}
         {activePage === 'contact' && (
           <ContactSection />
@@ -326,15 +372,15 @@ export default function App() {
 
       {/* Floating Concierge WhatsApp Trigger */}
       <a
-        href={`https://wa.me/${CONCIERGE_WHATSAPP_NUMBER}?text=Hello%20DON%20AZA-KHEM%20Concierge,%20I%20would%20like%20to%20inquire%20about%20your%20Cape%20Town%20collection.`}
+        href={`https://wa.me/${CONCIERGE_WHATSAPP_NUMBER}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Contact Concierge on WhatsApp"
-        className="fixed bottom-6 left-6 z-40 bg-[#25D366] hover:bg-[#1EBE5D] text-white p-3.5 shadow-lg border border-white/20 transition-all duration-300 flex items-center gap-2.5 cursor-pointer group"
+        aria-label="Order on WhatsApp 073 628 5307"
+        className="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:bottom-6 sm:w-auto z-40 bg-[#25D366] hover:bg-[#1EBE5D] text-white py-3.5 px-6 rounded-full font-bold shadow-2xl border border-white/20 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer active:scale-95 text-center"
       >
-        <MessageCircle className="w-5 h-5 fill-white" />
-        <span className="hidden sm:inline text-xs uppercase tracking-widest font-semibold pr-1">
-          WhatsApp Concierge
+        <span className="text-base">💬</span>
+        <span className="text-xs sm:text-sm uppercase tracking-widest font-bold">
+          ORDER ON WHATSAPP • 073 628 5307
         </span>
       </a>
 

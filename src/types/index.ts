@@ -35,4 +35,4 @@ export interface CartItem {
   quantity: number;
 }
 
-export type ActivePage = 'home' | 'suits' | 'shirts' | 'jewelry' | 'contact' | 'brand-bible';
+export type ActivePage = 'home' | 'suits' | 'shirts' | 'jewelry' | 'contact' | 'brand-bible' | 'navy-signature';

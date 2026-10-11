@@ -247,8 +247,22 @@ export const ProductModal: React.FC<ProductModalProps> = ({
               className="w-full py-3 px-6 bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs uppercase tracking-[0.2em] font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer text-center"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>Instant WhatsApp Order</span>
+              <span>Instant WhatsApp Order (073 628 5307)</span>
             </a>
+
+            {/* Special Full Suit Bundle Button for Navy Signature Shirt */}
+            {product.id === 'shirt-navy' && (
+              <button
+                type="button"
+                onClick={() => {
+                  const message = `Hi DON AZA-KHEM — I want FULL SUIT R3298 — Navy Blazer + Navy Shirt + Pants Size ${selectedSize}. My address: `;
+                  window.open(`https://wa.me/27736285307?text=${encodeURIComponent(message)}`, '_blank');
+                }}
+                className="w-full py-3 px-6 bg-[#C9A86A] hover:bg-[#bfa05d] text-[#0A0A0A] text-xs uppercase tracking-[0.18em] font-bold flex items-center justify-center gap-2 transition-colors cursor-pointer text-center"
+              >
+                <span>FULL SUIT R3298 — Blazer + Shirt + Pants</span>
+              </button>
+            )}
 
             {/* Delivery & Trust markers */}
             <div className="pt-3 grid grid-cols-2 gap-2 text-[10px] text-[#666666] uppercase tracking-wider">

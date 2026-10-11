@@ -122,6 +122,27 @@ export const ContactSection: React.FC = () => {
                 </div>
               </div>
 
+              {/* Direct Phone / WhatsApp Card */}
+              <div className="p-5 bg-white border border-[#000000]/8 flex items-start gap-3.5">
+                <div className="w-10 h-10 rounded-none bg-[#FAF8F5] border border-black/10 flex items-center justify-center text-[#25D366] shrink-0">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-[10px] uppercase tracking-widest text-[#888888]">Direct WhatsApp Concierge</div>
+                  <a
+                    href={`https://wa.me/${CONCIERGE_WHATSAPP_NUMBER}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-editorial text-base font-semibold text-[#111111] hover:text-[#25D366] transition-colors block"
+                  >
+                    073 628 5307
+                  </a>
+                  <div className="text-xs text-[#666666] mt-0.5 font-light">
+                    Cape Town • Cash on Delivery & 24hr delivery available
+                  </div>
+                </div>
+              </div>
+
               {/* Hours & Courier Speed */}
               <div className="p-5 bg-white border border-[#000000]/8 flex items-start gap-3.5">
                 <div className="w-10 h-10 rounded-none bg-[#FAF8F5] border border-black/10 flex items-center justify-center text-[#5A0A1A] shrink-0">

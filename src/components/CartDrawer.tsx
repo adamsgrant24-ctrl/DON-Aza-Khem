@@ -54,7 +54,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
     <div className="fixed inset-0 z-50 overflow-hidden animate-fadeIn">
       {/* Backdrop */}
       <div 
-        className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity"
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity cursor-pointer"
         onClick={onClose}
       />
 
@@ -104,7 +104,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 </div>
                 <p className="font-editorial text-lg text-[#111111] mb-1">Your bag is currently empty</p>
                 <p className="text-xs text-[#888888] max-w-xs mb-6">
-                  Discover the 5 Suits, fluid satin shirts, and handcrafted 18K jewelry from our Camps Bay collection.
+                  Discover the Signature Satin Shirts, tailored suits, and handcrafted 18K jewelry from our Cape Town collection.
                 </p>
                 <button
                   onClick={onClose}
@@ -197,7 +197,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     />
                     <input
                       type="text"
-                      placeholder="Contact Number (e.g. 072 ...)"
+                      placeholder="Contact Number (e.g. 073 628 5307)"
                       value={clientPhone}
                       onChange={(e) => setClientPhone(e.target.value)}
                       className="w-full px-3 py-2 border border-black/15 text-xs focus:border-[#C9A961] focus:outline-none"
@@ -259,7 +259,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 className="w-full py-4 px-6 bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs uppercase tracking-[0.2em] font-semibold flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer shadow-sm text-center"
               >
                 <MessageCircle className="w-4 h-4 fill-white" />
-                <span>Checkout via WhatsApp</span>
+                <span>Checkout via WhatsApp (073 628 5307)</span>
                 <ArrowRight className="w-3.5 h-3.5 ml-1" />
               </a>
 
@@ -293,7 +293,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               </div>
 
               <div className="text-[10px] text-center text-[#888888] pt-1">
-                Direct WhatsApp Concierge: +27 72 000 0000 • Cape Town, South Africa
+                Direct WhatsApp Concierge: 073 628 5307 • Cape Town (Cash on Delivery & 24hr delivery)
               </div>
             </div>
           )}

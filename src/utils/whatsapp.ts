@@ -1,6 +1,6 @@
 import { CartItem } from '../types';
 
-export const CONCIERGE_WHATSAPP_NUMBER = '27720000000'; // South Africa (+27 72 ...)
+export const CONCIERGE_WHATSAPP_NUMBER = '27736285307'; // Cape Town: 073 628 5307
 export const INSTAGRAM_HANDLE = 'donazakhem';
 export const INSTAGRAM_URL = 'https://instagram.com/donazakhem';
 

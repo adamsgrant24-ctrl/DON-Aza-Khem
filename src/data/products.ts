@@ -120,6 +120,30 @@ export const SUITS_DATA: Product[] = [
     sizes: ['38R', '40R', '42R', '44R', '46R'],
     inStock: true,
     featured: true
+  },
+  {
+    id: 'suit-navy-signature-bundle',
+    name: 'The Navy Sovereign Full Suit Bundle',
+    category: 'suits',
+    price: 3298,
+    formattedPrice: 'R3,298',
+    tagline: 'Blazer + Navy Shirt + Pants',
+    description: 'The definitive DON AZA-KHEM navy ensemble. Includes structured navy blazer, tailored flat-front trousers, and the signature navy silk-satin shirt accented with the 18K gold cross necklace chain.',
+    composition: 'Navy Super 140s Wool Blend • Navy Signature Silk-Touch Satin Shirt • 18K Gold Cross Chain Accent',
+    suitColor: 'Midnight Navy (#1A2332)',
+    shirtColor: 'Navy Satin (#1A2332)',
+    necklaceAccents: 'Signature 18K Gold Cross Chain Included',
+    details: [
+      'Full three-piece suite: Structured navy blazer, tailored trousers, and navy satin shirt',
+      'Complimentary 18K gold cross chain detail',
+      'Folded presentation tailored for weddings, galas, and boardrooms',
+      'Cash on Delivery in Cape Town • 24hr delivery',
+      'Hand-finished pick stitching and Milanese lapel'
+    ],
+    image: '/navy_shirt_real.jpg',
+    sizes: ['38R (S)', '40R (M)', '42R (L)', '44R (XL)', '46R (XXL)'],
+    inStock: true,
+    featured: true
   }
 ];
 
@@ -186,40 +210,42 @@ export const SHIRTS_DATA: Product[] = [
   },
   {
     id: 'shirt-burgundy',
-    name: 'Imperial Burgundy Satin Shirt',
+    name: 'Burgundy Signature Shirt',
     category: 'shirts',
     price: 599,
     formattedPrice: 'R599',
-    tagline: 'Burgundy Silk-Satin Shirt',
-    description: 'A deep wine-red satin that exudes quiet confidence and aristocratic allure. Beautifully rich under charcoal and navy tailoring, catching the ambient candlelight of Camps Bay private dining.',
-    composition: '100% Silk-Touch Drape Satin • Dark Smoked Shell Buttons',
+    tagline: 'R599 • Satin • Gold Cross Detail',
+    description: 'Rich burgundy satin. Gold cross. Limited edition. Tailored drape. S-XXL. Paired with 18k gold cross chain. Quiet luxury for weddings, dinners, and boardrooms.',
+    composition: '100% Silk-Touch Drape Satin • 18K Gold Cross Chain Included',
     details: [
-      'Deep wine hue with multi-tonal luster',
-      'Soft spread collar cut specifically for open-chest styling',
-      'Lightweight, breathable weave tailored for all climates',
-      'French seam construction throughout'
+      'Rich burgundy satin finish with liquid luster',
+      'Paired with 18k gold cross chain detail included',
+      'Folded presentation tailored fit',
+      'Limited edition drop S-XXL',
+      'Cash on Delivery in Cape Town • 24hr delivery'
     ],
-    image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80',
+    image: '/burgundy_shirt_real.jpg',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     inStock: true,
     featured: true
   },
   {
     id: 'shirt-navy',
-    name: 'Atlantic Deep Navy Satin Shirt',
+    name: 'Navy Signature Shirt',
     category: 'shirts',
     price: 599,
     formattedPrice: 'R599',
-    tagline: 'Navy Silk-Satin Shirt',
-    description: 'An oceanic deep navy satin shirt with liquid cobalt undertones. Engineered to provide striking contrast under our Champagne Riviera suit or worn monochrome under navy tailoring.',
-    composition: '100% High-Density Silk-Touch Satin • Navy Inset Buttons',
+    tagline: 'R599 • Satin • Gold Cross Detail',
+    description: 'Signature satin finish. Folded presentation. Paired with 18k gold cross chain. Tailored fit. Quiet luxury for weddings, dinners, and boardrooms.',
+    composition: '100% High-Density Silk-Touch Satin • 18K Gold Cross Chain Included',
     details: [
-      'Rich deep navy finish with mirror-like smooth drape',
-      'Engineered shoulder yoke for athletic drape',
-      'Clean hem designed to be worn untucked or smoothly tucked',
-      'Tailored in Cape Town'
+      'Signature satin finish with liquid midnight navy luster',
+      'Paired with 18k gold cross chain accent included',
+      'Folded presentation tailored fit',
+      'Quiet luxury for weddings, dinners, and boardrooms',
+      'Cash on Delivery in Cape Town • 24hr delivery'
     ],
-    image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80',
+    image: '/navy_shirt_real.jpg',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     inStock: true,
     featured: true

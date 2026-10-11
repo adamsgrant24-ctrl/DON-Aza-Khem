@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DON AZA-KHEM | V1 - Navy Signature</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DON AZA-KHEM | Quiet Luxury Cape Town</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,sans-serif;background:#FFFEF8;color:#0A0A0A}
-header{padding:24px;text-align:center;border-bottom:1px solid #f0e9d0}
-.logo{font-family:'Cormorant Garamond';letter-spacing:6px;font-size:20px;font-weight:600}
-.hero{max-width:480px;margin:0 auto;padding:20px 16px 120px}
-.hero img{width:100%;border-radius:24px;aspect-ratio:3/4;object-fit:cover;background:#faf6eb}
-.info{padding:20px 4px}
-.title{font-family:'Cormorant Garamond';font-size:28px}
-.price{font-size:20px;margin-top:8px;font-weight:600}
-.desc{font-size:13px;opacity:.6;margin-top:12px;line-height:1.6;letter-spacing:.3px}
-.sizes{display:flex;gap:10px;margin:18px 0}
-.size{width:48px;height:48px;border:1px solid #ddd;border-radius:100px;display:flex;align-items:center;justify-content:center;cursor:pointer}
-.size.active{background:#0A0A0A;color:white}
-.btn{width:100%;padding:18px;border-radius:100px;border:none;background:#0A0A0A;color:white;letter-spacing:2px;font-size:13px;margin-top:16px}
-.btn-gold{background:#C9A86A}
-.wa{position:fixed;bottom:16px;left:16px;right:16px;background:#25D366;color:white;text-align:center;padding:18px;border-radius:100px;font-weight:700;text-decoration:none}
+  body{margin:0;font-family:Inter,system-ui;background:#fcfbf8;color:#111}
+  header{padding:24px;text-align:center;border-bottom:1px solid #eee}
+  header h1{font-size:18px;letter-spacing:.35em;font-weight:600;margin:0}
+  .hero{text-align:center;padding:40px 20px 10px}
+  .hero h2{font-size:32px;font-weight:300;margin:0 0 10px;letter-spacing:.05em}
+  .hero p{color:#888;font-size:14px;letter-spacing:.15em;text-transform:uppercase}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;max-width:1100px;margin:40px auto;padding:0 20px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.grid{grid-template-columns:1fr}}
+  .card{background:white;border-radius:18px;overflow:hidden;border:1px solid #eee;box-shadow:0 10px 30px rgba(0,0,0,.04)}
+  .card img{width:100%;height:520px;object-fit:cover;display:block;background:#fff}
+  .card-body{padding:18px}
+  .card-body h3{margin:0;font-size:14px;letter-spacing:.2em;text-transform:uppercase}
+  .price{font-weight:600;margin:8px 0}
+  .desc{font-size:13px;color:#777;margin-bottom:14px;line-height:1.4}
+  .btn{display:block;text-align:center;background:#111;color:white;padding:14px;border-radius:999px;text-decoration:none;font-size:12px;letter-spacing:.18em}
+  footer{text-align:center;padding:50px 20px;color:#aaa;font-size:11px;letter-spacing:.2em;line-height:1.8}
 </style>
 </head>
 <body>
-<header><div class="logo">DON AZA-KHEM</div><div style="font-size:10px;opacity:.5;letter-spacing:2px;margin-top:6px">CAPE TOWN • 073 628 5307</div></header>
+
+<header><h1>DON AZA-KHEM</h1></header>
+
 <div class="hero">
-<img src="navy_shirt_real.jpg" alt="Navy Signature Shirt">
-<div class="info">
-<div class="title">Navy Signature Shirt</div>
-<div class="price">R599 • Satin • Gold Cross Detail</div>
-<div class="desc">Signature satin finish. Folded presentation. Paired with 18k gold cross chain. Tailored fit. Quiet luxury for weddings, dinners, and boardrooms.</div>
-<div style="font-size:11px;letter-spacing:2px;opacity:.5;margin-top:20px">SELECT SIZE</div>
-<div class="sizes" id="sizes"></div>
-<button class="btn" onclick="buy()">BUY NOW — WhatsApp 073 628 5307</button>
-<button class="btn btn-gold" onclick="buyFull()">FULL SUIT R3298 — Blazer + Shirt + Pants</button>
-<div style="text-align:center;font-size:11px;opacity:.4;margin-top:16px">Cash on Delivery in Cape Town • 24hr delivery</div>
+  <h2>Quiet Luxury. Cape Town.</h2>
+  <p>Satin Finish • Gold Cross • Cash On Delivery</p>
 </div>
+
+<div class="grid">
+
+  <div class="card">
+    <img src="navy_shirt_real.jpg" alt="Navy Signature" />
+    <div class="card-body">
+      <h3>Navy Signature</h3>
+      <div class="price">R599</div>
+      <div class="desc">Deep navy satin. Gold cross detail. S-XXL.</div>
+      <a class="btn" href="https://wa.me/27736285307?text=Hi%20DON%20AZA-KHEM%20-%20I%20want%20Navy%20Signature%20R599%20Size%3A">BUY ON WHATSAPP</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="burgundy_shirt_real.jpg" alt="Burgundy Signature" />
+    <div class="card-body">
+      <h3>Burgundy Signature</h3>
+      <div class="price">R599</div>
+      <div class="desc">Rich burgundy satin. Limited edition. S-XXL.</div>
+      <a class="btn" href="https://wa.me/27736285307?text=Hi%20DON%20AZA-KHEM%20-%20I%20want%20Burgundy%20Signature%20R599%20Size%3A">BUY ON WHATSAPP</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="black_shirt_real.jpg" alt="Black Signature" />
+    <div class="card-body">
+      <h3>Black Signature</h3>
+      <div class="price">R599</div>
+      <div class="desc">Jet black satin. Gold cross. Most requested. S-XXL.</div>
+      <a class="btn" href="https://wa.me/27736285307?text=Hi%20DON%20AZA-KHEM%20-%20I%20want%20Black%20Signature%20R599%20Size%3A">BUY ON WHATSAPP</a>
+    </div>
+  </div>
+
 </div>
-<a class="wa" href="https://wa.me/27736285307" target="_blank">💬 ORDER ON WHATSAPP</a>
-<script>
-let sz="L";
-const sizesEl=document.getElementById("sizes");
-["S","M","L","XL","XXL"].forEach(s=>{
-let d=document.createElement("div");
-d.className="size"+(s===sz?" active":"");
-d.textContent=s;
-d.onclick=()=>{
-document.querySelectorAll(".size").forEach(x=>x.classList.remove("active"));
-d.classList.add("active");
-sz=s;
-};
-sizesEl.appendChild(d);
-});
-function buy(){
-let m=`Hi DON AZA-KHEM — I want Navy Signature Shirt Size ${sz} — R599. My address: `;
-window.open(`https://wa.me/27736285307?text=${encodeURIComponent(m)}`,"_blank");
-}
-function buyFull(){
-let m=`Hi DON AZA-KHEM — I want FULL SUIT R3298 — Navy Blazer + Navy Shirt + Pants Size ${sz}. My address: `;
-window.open(`https://wa.me/27736285307?text=${encodeURIComponent(m)}`,"_blank");
-}
-</script>
+
+<footer>DON AZA-KHEM — QUIET LUXURY CAPE TOWN<br/>WHATSAPP 073 628 5307 • CASH ON DELIVERY • NATIONWIDE PAXI</footer>
+
 </body>
 </html>

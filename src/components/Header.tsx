@@ -20,6 +20,7 @@ export const Header: React.FC<HeaderProps> = ({
   const totalItemCount = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   const navLinks: { label: string; page: ActivePage }[] = [
+    { label: 'Navy Signature', page: 'navy-signature' },
     { label: 'The Suits', page: 'suits' },
     { label: 'Satin Shirts', page: 'shirts' },
     { label: 'Jewelry', page: 'jewelry' },
@@ -40,9 +41,9 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="max-w-7xl mx-auto flex items-center justify-center gap-3">
           <span>Crafted in Refined Taste</span>
           <span className="text-[#C9A961]" aria-hidden="true">·</span>
-          <span>Camps Bay, Cape Town</span>
+          <span>Cape Town • 073 628 5307</span>
           <span className="hidden sm:inline text-[#C9A961]" aria-hidden="true">·</span>
-          <span className="hidden sm:inline text-white/80">Complimentary Overnight Courier Across South Africa</span>
+          <span className="hidden sm:inline text-white/90">Cash on Delivery in Cape Town • 24hr Delivery</span>
         </div>
       </div>
 
@@ -58,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({
               DON AZA-KHEM
             </span>
             <span className="text-[10px] uppercase tracking-[0.25em] text-[#C9A961] block font-medium -mt-1">
-              Cape Town
+              Cape Town • 073 628 5307
             </span>
           </button>
         </div>

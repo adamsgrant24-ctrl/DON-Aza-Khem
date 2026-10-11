@@ -38,10 +38,10 @@ export const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
                 href={`https://wa.me/${CONCIERGE_WHATSAPP_NUMBER}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-[#25D366] hover:text-white transition-colors"
+                className="flex items-center gap-1.5 text-[#25D366] hover:text-white transition-colors font-medium"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>+27 72 000 0000</span>
+                <span>073 628 5307</span>
               </a>
               <span className="text-white/20">|</span>
               <a
@@ -64,10 +64,18 @@ export const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
             <ul className="space-y-2 text-xs font-light text-neutral-300">
               <li>
                 <button
+                  onClick={() => handleNav('navy-signature')}
+                  className="hover:text-white text-[#C9A961] font-medium transition-colors cursor-pointer"
+                >
+                  ★ Navy Signature Drop (R599)
+                </button>
+              </li>
+              <li>
+                <button
                   onClick={() => handleNav('suits')}
                   className="hover:text-white transition-colors cursor-pointer"
                 >
-                  The 5 Suits Collection (R2,999)
+                  The Suits Collection (R2,999 - R3,298)
                 </button>
               </li>
               <li>
