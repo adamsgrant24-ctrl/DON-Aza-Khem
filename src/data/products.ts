@@ -149,80 +149,41 @@ export const SUITS_DATA: Product[] = [
 
 export const SHIRTS_DATA: Product[] = [
   {
-    id: 'shirt-black',
-    name: 'Midnight Noir Satin Shirt',
+    id: 'shirt-navy',
+    name: 'Navy Signature',
     category: 'shirts',
     price: 599,
     formattedPrice: 'R599',
-    tagline: 'Black Silk-Satin Shirt',
-    description: 'Tailored from ultra-fine mulberry silk-satin with a rich liquid drape and low-sheen midnight black luster. Designed with a relaxed spread collar intended to be worn open at the chest with our signature gold chains.',
-    composition: '100% High-Grade Silk-Touch Satin • Natural Mother-of-Pearl Buttons',
+    tagline: 'Deep navy satin. Gold cross detail. S-XXL.',
+    description: 'Deep navy satin. Gold cross detail. Tailored drape. S-XXL. Signature folded presentation for weddings, dinners, and boardrooms.',
+    composition: '100% High-Density Silk-Touch Satin • 18K Gold Cross Chain Included',
     details: [
-      'Classic spread collar with removable collar stays',
-      'French convertible cuffs suitable for cufflinks or button closure',
-      'Fluid, breathable drape with subtle natural stretch',
-      'Reinforced gusset stitching at side seams'
+      'Deep navy satin with liquid luster',
+      '18K gold cross detail included',
+      'Tailored drape • Folded presentation',
+      'Available sizes: S, M, L, XL, XXL',
+      'Cash on Delivery in Cape Town • Nationwide PAXI • 24hr delivery'
     ],
-    image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=80',
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    inStock: true,
-    featured: true
-  },
-  {
-    id: 'shirt-white',
-    name: 'Porcelain Alabaster Satin Shirt',
-    category: 'shirts',
-    price: 599,
-    formattedPrice: 'R599',
-    tagline: 'White Silk-Satin Shirt',
-    description: 'Immaculate ivory-white satin shirt offering luminous reflection without harsh glare. The quintessential pairing for our Noir Sovereign suit or as an unbuttoned statement piece in Atlantic summer.',
-    composition: '100% Mulberry Silk-Touch Satin • Carved Natural Shell Buttons',
-    details: [
-      'Soft structured collar that holds its stance unbuttoned',
-      'Silky smooth hand-feel against skin',
-      'Wrinkle-resistant luxury finish for extended evenings',
-      'Back side pleats for unrestricted movement'
-    ],
-    image: 'https://images.unsplash.com/photo-1620012253295-c15c429f66bf?auto=format&fit=crop&w=900&q=80',
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    inStock: true,
-    featured: true
-  },
-  {
-    id: 'shirt-champagne',
-    name: 'Champagne Reserve Satin Shirt',
-    category: 'shirts',
-    price: 599,
-    formattedPrice: 'R599',
-    tagline: 'Champagne Gold Satin Shirt',
-    description: 'A warm, understated champagne shade reminiscent of vintage Dom Pérignon. Melts seamlessly under Burgundy and Navy tailoring, bringing old-world warmth to contemporary eveningwear.',
-    composition: '100% Silk-Touch Lustrous Satin • Amber Toned Buttons',
-    details: [
-      'Warm champagne tone tailored with modern sartorial ease',
-      'Double-button barrel cuffs with bevelled edges',
-      'Clean hidden front placket for an uninterrupted line',
-      'Dry clean or cold delicate cycle'
-    ],
-    image: 'https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=80',
+    image: '/navy_shirt_real.jpg',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     inStock: true,
     featured: true
   },
   {
     id: 'shirt-burgundy',
-    name: 'Burgundy Signature Shirt',
+    name: 'Burgundy Signature',
     category: 'shirts',
     price: 599,
     formattedPrice: 'R599',
-    tagline: 'R599 • Satin • Gold Cross Detail',
-    description: 'Rich burgundy satin. Gold cross. Limited edition. Tailored drape. S-XXL. Paired with 18k gold cross chain. Quiet luxury for weddings, dinners, and boardrooms.',
-    composition: '100% Silk-Touch Drape Satin • 18K Gold Cross Chain Included',
+    tagline: 'Rich burgundy satin. Limited edition. S-XXL.',
+    description: 'Rich burgundy satin. Gold cross. Limited edition. S-XXL. Signature folded presentation with aristocratic wine drape.',
+    composition: '100% High-Density Silk-Touch Satin • 18K Gold Cross Chain Included',
     details: [
-      'Rich burgundy satin finish with liquid luster',
-      'Paired with 18k gold cross chain detail included',
-      'Folded presentation tailored fit',
+      'Rich burgundy satin with liquid luster',
+      '18K gold cross detail included',
       'Limited edition drop S-XXL',
-      'Cash on Delivery in Cape Town • 24hr delivery'
+      'Tailored drape • Folded presentation',
+      'Cash on Delivery in Cape Town • Nationwide PAXI • 24hr delivery'
     ],
     image: '/burgundy_shirt_real.jpg',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -230,22 +191,22 @@ export const SHIRTS_DATA: Product[] = [
     featured: true
   },
   {
-    id: 'shirt-navy',
-    name: 'Navy Signature Shirt',
+    id: 'shirt-black',
+    name: 'Black Signature',
     category: 'shirts',
     price: 599,
     formattedPrice: 'R599',
-    tagline: 'R599 • Satin • Gold Cross Detail',
-    description: 'Signature satin finish. Folded presentation. Paired with 18k gold cross chain. Tailored fit. Quiet luxury for weddings, dinners, and boardrooms.',
+    tagline: 'Jet black satin. Gold cross. Most requested. S-XXL.',
+    description: 'Jet black satin. Gold cross. Most requested. S-XXL. Signature folded presentation in midnight obsidian satin with tailored drape.',
     composition: '100% High-Density Silk-Touch Satin • 18K Gold Cross Chain Included',
     details: [
-      'Signature satin finish with liquid midnight navy luster',
-      'Paired with 18k gold cross chain accent included',
-      'Folded presentation tailored fit',
-      'Quiet luxury for weddings, dinners, and boardrooms',
-      'Cash on Delivery in Cape Town • 24hr delivery'
+      'Jet black satin with low-sheen liquid luster',
+      '18K gold cross detail included',
+      'Most requested signature look',
+      'Tailored drape • Folded presentation',
+      'Cash on Delivery in Cape Town • Nationwide PAXI • 24hr delivery'
     ],
-    image: '/navy_shirt_real.jpg',
+    image: '/black_shirt_real.jpg',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
     inStock: true,
     featured: true

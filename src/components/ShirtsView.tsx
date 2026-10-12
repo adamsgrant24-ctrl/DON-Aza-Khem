@@ -24,15 +24,15 @@ export const ShirtsView: React.FC<ShirtsViewProps> = ({
           </div>
 
           <h1 className="font-editorial text-3xl sm:text-5xl text-[#000000] font-normal tracking-wide uppercase mb-4">
-            Satin Shirts Collection
+            Signature Satin Shirts
           </h1>
 
           <p className="font-serif italic text-lg sm:text-xl text-[#5A0A1A] max-w-xl mx-auto">
-            Black, White, Champagne, Burgundy & Navy • R599 Each
+            Navy Signature, Burgundy Signature & Black Signature • R599 Each
           </p>
 
           <p className="mt-4 text-xs sm:text-sm text-[#555555] leading-relaxed max-w-2xl mx-auto font-light">
-            Engineered to flow like liquid over the skin. Tailored with a soft relaxed spread collar designed to be worn open at the chest, creating the quintessential Old Money Camps Bay silhouette.
+            Engineered in liquid silk-touch satin, folded presentation, each paired with our signature 18K gold cross chain. Cash on Delivery across Cape Town & Nationwide PAXI.
           </p>
         </div>
 
@@ -87,24 +87,24 @@ export const ShirtsView: React.FC<ShirtsViewProps> = ({
                 Atelier Privilege
               </span>
               <h3 className="font-editorial text-2xl text-[#111111] font-normal mb-2">
-                The 5-Color Complete Capsule
+                The 3-Shirt Signature Trio
               </h3>
               <p className="text-xs text-[#555555] font-light leading-relaxed mb-6">
-                Acquire the entire palette: Black, White, Champagne, Burgundy, and Navy. Seamlessly layer under any jacket for any sunset occasion.
+                Acquire the complete trinity: Navy Signature, Burgundy Signature, and Black Signature. Each folded with an 18K gold cross necklace.
               </p>
               <div className="text-lg font-mono font-semibold text-[#111111] mb-2 tabular-nums">
-                R2,695 <span className="text-xs text-[#777777] font-sans font-normal">(Save 10% on the full 5-shirt suite)</span>
+                R1,617 <span className="text-xs text-[#777777] font-sans font-normal">(Save 10% on the complete 3-shirt suite)</span>
               </div>
             </div>
 
             <div>
               <a
-                href="https://wa.me/27720000000?text=Hello%20DON%20AZA-KHEM%20Concierge,%20I%20would%20like%20to%20order%20the%20Complete%205-Shirt%20Satin%20Capsule%20(R2,695)."
+                href="https://wa.me/27736285307?text=Hello%20DON%20AZA-KHEM%20Concierge,%20I%20would%20like%20to%20order%20the%20Complete%203-Shirt%20Signature%20Trio%20(Navy,%20Burgundy,%20Black)%20for%20R1,617."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-3.5 px-4 bg-black hover:bg-[#5A0A1A] text-white text-xs uppercase tracking-[0.2em] font-semibold block text-center transition-colors"
               >
-                Order 5-Shirt Capsule
+                Order 3-Shirt Trio (WhatsApp)
               </a>
             </div>
           </div>

@@ -190,10 +190,10 @@ export default function App() {
                       Fluid Silk-Touch Tailoring
                     </span>
                     <h2 className="font-editorial text-3xl sm:text-4xl text-[#000000] font-normal uppercase">
-                      The Satin Shirts (R599)
+                      Signature Satin Shirts (R599)
                     </h2>
                     <p className="text-xs sm:text-sm text-[#666666] font-light mt-1">
-                      Black, White, Champagne, Burgundy, and Navy. Open spread collars engineered for coastal breeze.
+                      Navy Signature, Burgundy Signature & Black Signature. Folded presentation paired with 18K gold cross detail.
                     </p>
                   </div>
 
@@ -204,12 +204,12 @@ export default function App() {
                     }}
                     className="mt-4 sm:mt-0 text-xs uppercase tracking-[0.2em] font-semibold text-[#000000] hover:text-[#5A0A1A] flex items-center gap-1.5 transition-colors cursor-pointer"
                   >
-                    <span>View Shirts (R599 each)</span>
+                    <span>View All Shirts (R599 each)</span>
                     <ArrowRight className="w-4 h-4 text-[#C9A961]" />
                   </button>
                 </div>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                   {SHIRTS_DATA.map((shirt) => (
                     <ProductCard
                       key={shirt.id}
